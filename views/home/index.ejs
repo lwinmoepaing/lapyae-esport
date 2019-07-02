@@ -5,9 +5,10 @@
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Team</th>
+      <th scope="col">Name</th>
+      <th scope="col">Team Name </th>
+      <th scope="col">Status </th>
     </tr>
   </thead>
   <tbody>
@@ -15,10 +16,11 @@
     <% users.forEach(function(user){ %>
         <tr>
             <th scope="row"><%= user.state %></th>
+            <td><img src="<%= user.team_img %>" alt="<%= user.team %>" class="my-team-image"></td>
             <td><%= user.name %></td>
             <td><%= user.team %></td>
-        <td><%= user.team_img %></td>
-    </tr>
+            <td><%= user.status %></td>
+        </tr>
     <% }); %>
     
     <!-- <tr>
