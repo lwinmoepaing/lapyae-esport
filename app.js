@@ -33,6 +33,10 @@ webRoutes.forEach((route, i) => {
 /**
  * All Api Routers
  */
+// const apiRoutes = golb.sync('./routes/api/*.js')
+// apiRoutes.forEach((route, i) => {
+// 	require(route)(app)
+// })
 
 app.all('*', (req, res) => {
 	res.status(200).json({
