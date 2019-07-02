@@ -14,7 +14,21 @@ const SHOW_INDEX = (req, res) => {
 		},
 		{
 			state: '3',
-			name: ''
+			name: 'Nyi Nyi',
+			team: 'Athetico Madriad',
+			team_img: 'path'
+		},
+		{
+			state: '4',
+			name: 'Min Htet Kyaw Thu',
+			team: 'Arsenal',
+			team_img: 'path'
+		},
+		{
+			state: '5',
+			name: 'Aung Myo Kyaw',
+			team: 'Juventus',
+			team_img: 'path'
 		}
 	]
 	res.render('home/index', {
