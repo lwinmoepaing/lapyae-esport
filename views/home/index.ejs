@@ -1,39 +1,73 @@
 <% layout('../template/lapyae') -%>
 
+<!-- Canvas -->
+<main>
+  <div class="content">
+    <canvas class="scene scene--full" id="scene"></canvas>
+    <script type="x-shader/x-vertex" id="wrapVertexShader">
+      attribute float size;
+      attribute vec3 color;
+      varying vec3 vColor;
+      void main() {
+        vColor = color;
+        vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+        gl_PointSize = size * ( 350.0 / - mvPosition.z );
+        gl_Position = projectionMatrix * mvPosition;
+      }
+    </script>
+    <script type="x-shader/x-fragment" id="wrapFragmentShader">
+      varying vec3 vColor;
+      uniform sampler2D texture;
+      void main(){
+        vec4 textureColor = texture2D( texture, gl_PointCoord );
+        if ( textureColor.a < 0.3 ) discard;
+        vec4 color = vec4(vColor.xyz, 1.0) * textureColor;
+        gl_FragColor = color;
+      }
+    </script>
+    <div class="content__inner">
+      <h2 class="content__title"> Lapyae Lion </h2>
+      <h3 class="content__subtitle"> E-Sport Center </h2>
+    </div>
+  </div>
+</main>
+<!-- Canvas End -->
 
-<table class="table table-striped mt-5">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Team</th>
-      <th scope="col">Name</th>
-      <th scope="col">Team Name </th>
-      <th scope="col">Status </th>
-    </tr>
-  </thead>
-  <tbody>
+<div class="table-responsive">
+  <table class="table table-striped mt-5 table-dark">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Team</th>
+        <th scope="col">Name</th>
+        <th scope="col">Team Name </th>
+        <th scope="col">Status </th>
+      </tr>
+    </thead>
+    <tbody>
 
-    <% users.forEach(function(user){ %>
-        <tr>
-            <th scope="row"><%= user.state %></th>
-            <td><img src="<%= user.team_img %>" alt="<%= user.team %>" class="my-team-image"></td>
-            <td><%= user.name %></td>
-            <td><%= user.team %></td>
-            <td><%= user.status %></td>
-        </tr>
-    <% }); %>
-    
-    <!-- <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr> -->
-  </tbody>
-</table>
+      <% users.forEach(function(user){ %>
+          <tr>
+              <th scope="row"><%= user.state %></th>
+              <td><img src="<%= user.team_img %>" alt="<%= user.team %>" class="my-team-image"></td>
+              <td><%= user.name %></td>
+              <td><%= user.team %></td>
+              <td><%= user.status %></td>
+          </tr>
+      <% }); %>
+      
+      <!-- <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr> -->
+    </tbody>
+  </table>
+</div>

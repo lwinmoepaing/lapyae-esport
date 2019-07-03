@@ -20,7 +20,14 @@ app.set('view engine', 'ejs')
 /**
  * Set Static Public Page
  */
-app.use(express.static(path.resolve('./public')))
+app.use(
+	express.static(
+		path.resolve('./public'),
+		{
+			// maxAge: '2hr'
+		}
+	)
+)
 
 /**
  * All Web Routers
