@@ -33,41 +33,43 @@
 </main>
 <!-- Canvas End -->
 
-<div class="table-responsive">
-  <table class="table table-striped mt-5 table-dark">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Team</th>
-        <th scope="col">Name</th>
-        <th scope="col">Team Name </th>
-        <th scope="col">Status </th>
-      </tr>
-    </thead>
-    <tbody>
+<!-- Content Container -->
+<div class="container">
 
-      <% users.forEach(function(user){ %>
-          <tr>
-              <th scope="row"><%= user.state %></th>
-              <td><img src="<%= user.team_img %>" alt="<%= user.team %>" class="my-team-image"></td>
-              <td><%= user.name %></td>
-              <td><%= user.team %></td>
-              <td><%= user.status %></td>
-          </tr>
-      <% }); %>
-      
-      <!-- <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>@twitter</td>
-      </tr> -->
-    </tbody>
-  </table>
+  <!-- Games Componenet -->
+  <div class="game-component-container mt-5 ">
+
+    <% games.forEach(function(value){ %>
+        <% include ../component/gameComponent %>
+    <% }); %>
+
+
+  </div>
+  <!-- Games Componenet End-->
+
+  <!-- Table Start -->
+
+  <div class="table-responsive mt-3" >
+    <h3> Pes Weekly Table </h3>
+    <table class="table table-striped " id="pes_table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Team</th>
+          <th scope="col">Name</th>
+          <th scope="col">Team Name </th>
+          <th scope="col">Status </th>
+        </tr>
+      </thead>
+      <tbody>
+        <% users.forEach(function(user){ %>
+            <% include ../component/tr %>
+        <% }); %>
+      </tbody>
+    </table>
+  </div>
+  <!-- Table End -->
+
 </div>
+<!-- Content Container End-->
+
