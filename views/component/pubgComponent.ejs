@@ -1,0 +1,26 @@
+<div class="game-component winner-card-border mt-2">
+
+    <div class="game-component-img">
+          <img src="<%= user.profile_img %>" alt="<%= user.name %>">
+    
+          <div class="winner-card-pos">
+            <img 
+                class="winner-card-trophy-image" 
+                src="<%=
+                    (user.status === 'Champion') ? '/images/trophy/winner.png':  
+                    (user.status === '1stRunnerUp') ? '/images/trophy/first.png':  
+                    (user.status === '2ndRunnerUp') ? '/images/trophy/second.png':  
+                    (user.status === '3rdRunnerUp') ? '/images/trophy/third.png':  
+                    '/images/trophy/best.png' 
+                %>" 
+                alt="trophyImage"
+            >
+            <!-- Champion -->
+            <div class="winner-card-padding-top"> <%= user.status %> </div>
+          </div>
+    </div>
+    
+    <div class="game-component-title mt-3 mb-3 text-center">
+          <%= user.name %>
+    </div>
+</div>

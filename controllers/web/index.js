@@ -44,24 +44,28 @@ const SHOW_INDEX = (req, res) => {
 
 	const games = [
 		{
+			id: 'pes',
 			color: 'primary',
-			link: '#pes_table',
+			link: '#!',
 			link_title: 'View Result ',
 			game_img: '/images/games/pes.png'
 		},
 		{
+			id: 'pubg',
 			color: 'info',
 			link: '#!',
-			link_title: 'Comming Soon',
+			link_title: 'View Result',
 			game_img: '/images/games/pubg.png'
 		},
 		{
+			id: 'dota_2',
 			color: 'success',
 			link: '#!',
 			link_title: 'Comming Soon',
 			game_img: '/images/games/dota-2.png'
 		},
 		{
+			id: 'ml',
 			color: 'primary',
 			link: '#!',
 			link_title: 'Comming Soon',
@@ -69,10 +73,124 @@ const SHOW_INDEX = (req, res) => {
 		}
 	];
 
+	const pubg_users = [
+		[
+			{
+				name: 'Unknown Player',
+				profile_img: '/images/games/pubg.png',
+				status: 'Champion'
+			},
+			{
+				name: 'Unknown Player',
+				profile_img: '/images/games/pubg.png',
+				status: 'Champion'
+			},
+			{
+				name: 'Unknown Player',
+				profile_img: '/images/games/pubg.png',
+				status: 'Champion'
+			},
+			{
+				name: 'Unknown Player',
+				profile_img: '/images/games/pubg.png',
+				status: 'Champion'
+			},
+		],
+		[
+			{
+				name: 'Unknown Player',
+				profile_img: '/images/games/pubg.png',
+				status: '1stRunnerUp'
+			},
+			{
+				name: 'Unknown Player',
+				profile_img: '/images/games/pubg.png',
+				status: '1stRunnerUp'
+			},
+			{
+				name: 'Unknown Player',
+				profile_img: '/images/games/pubg.png',
+				status: '1stRunnerUp'
+			},
+			{
+				name: 'Unknown Player',
+				profile_img: '/images/games/pubg.png',
+				status: '1stRunnerUp'
+			},
+		],
+		[
+			{
+				name: 'Unknown Player',
+				profile_img: '/images/games/pubg.png',
+				status: '2ndRunnerUp'
+			},
+			{
+				name: 'Unknown Player',
+				profile_img: '/images/games/pubg.png',
+				status: '2ndRunnerUp'
+			},
+			{
+				name: 'Unknown Player',
+				profile_img: '/images/games/pubg.png',
+				status: '2ndRunnerUp'
+			},
+			{
+				name: 'Unknown Player',
+				profile_img: '/images/games/pubg.png',
+				status: '2ndRunnerUp'
+			},
+		],
+		[
+			{
+				name: 'Unknown Player',
+				profile_img: '/images/games/pubg.png',
+				status: '3rdRunnerUp'
+			},
+			{
+				name: 'Unknown Player',
+				profile_img: '/images/games/pubg.png',
+				status: '3rdRunnerUp'
+			},
+			{
+				name: 'Unknown Player',
+				profile_img: '/images/games/pubg.png',
+				status: '3rdRunnerUp'
+			},
+			{
+				name: 'Unknown Player',
+				profile_img: '/images/games/pubg.png',
+				status: '3rdRunnerUp'
+			},
+		],
+		[
+			{
+				name: 'Unknown Player',
+				profile_img: '/images/games/pubg.png',
+				status: '4thRunnerUp'
+			},
+			{
+				name: 'Unknown Player',
+				profile_img: '/images/games/pubg.png',
+				status: '4thRunnerUp'
+			},
+			{
+				name: 'Unknown Player',
+				profile_img: '/images/games/pubg.png',
+				status: '4thRunnerUp'
+			},
+			{
+				name: 'Unknown Player',
+				profile_img: '/images/games/pubg.png',
+				status: '4thRunnerUp'
+			},
+		]
+	];
+
 	res.render('home/index', {
 		title: ' Lapyae-Lion E-Sport ',
 		users,
-		games
+		games,
+		pubg_users
 	});
 };
 

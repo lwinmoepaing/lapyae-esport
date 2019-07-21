@@ -46,7 +46,9 @@
   </div>
   <!-- Games Componenet End-->
 
-  <!-- Winner Card -->
+  <hr>
+
+  <!-- PES Winner Card -->
   <div class="winner-card-container">
 
     <!-- Game List Title Show -->
@@ -55,13 +57,58 @@
     </div>
     <!-- Game List Title Show End -->
     
-    <% users.forEach(function(user, index){ %>
-      <% include ../component/pesComponent %>
-    <% }); %>
+    <div id="pes_game_title">
+      <% users.forEach(function(user, index){ %>
+        <% include ../component/pesComponent %>
+      <% }); %>
+    </div>
 
   </div>
-  <!-- Winner Card End -->
+  <!-- PES Winner Card End -->
+
+  <hr>
+
+  <!-- PUBG Winner Card -->
+  <div class="winner-card-container">
+
+      <!-- Game List Title Show -->
+      <div class="game-list-title text-center">
+        <img src="/images/games/pubg.png" alt="pubg">
+      </div>
+      <!-- Game List Title Show End -->
+      
+      <div class="mt-5" id="pubg_game_title">
+          <% pubg_users.forEach( function (pubg_team, indexOne){ %>
+            <h4> Team Name : ? </h4>
+            
+            <% pubg_team.forEach( function (user, index) { %>
+              <% include ../component/pubgComponent %>
+            <% }) %>
+
+            <hr>
+
+          <% }); %>
+      </div>
+  
+    </div>
+    <!-- PUBG Winner Card End -->
 
 </div>
 <!-- Content Container End-->
+
+<script>
+  $(document).ready( function () {
+    // Scroll to Pes Game Title
+    $('#pes').click( function () {
+      $('html, body').animate({ scrollTop: $('#pes_game_title').offset().top - 50 }, 'slow');
+    })
+
+    // Scroll to PUBG Game Title
+    $('#pubg').click( function () {
+      $('html, body').animate({ scrollTop: $('#pubg_game_title').offset().top - 50 }, 'slow');
+    })
+
+
+  })
+</script>
 
