@@ -77,4 +77,13 @@
     - *dota2
     - *pubg_mobile
     - *circle_empires_rivals
+- id: agyi
+  name: Aung Gyi
+  profile_img: "/images/profile/agyi.jpg"
+  about: "ကစားသမားတွေထဲမှာမှ ဂိမ်းတွေအကုန်လုံးကို ခဏလေးအတွင်းလေ့လာနိုင်တယ့် Gamer ပဲဖြစ်ပါတယ်။ "
+  games:
+    - *valorant
+    - *dota
+    - *dota2
+    - *pubg_mobile
 
