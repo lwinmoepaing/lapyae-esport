@@ -50,3 +50,11 @@
     - *circle_empires_rivals
     - *flatout2 
     - *mobile_legends
+- id: polo
+  name: Polo
+  profile_img: "/images/profile/polo.jpg"
+  about: "လပြည့်ဆိုင်မှာ အကောင်းဆုံး PUBG mobile ကစားသမားတစ်ယောက်ပါ။ Mobile Legneds မှာလည်း ဆရာတစ်ဆူဖြစ်ပြီး အခု Circle Empires Rivals မှာ Champion ကို စိမ်ခေါ်နိုင့်မယ်လို့ ရေးပမ်းအစားဆုံး Gamer ဖြစ်ပါတယ်။"
+  games:
+    - *pubg_mobile
+    - *circle_empires_rivals
+    - *mobile_legends
