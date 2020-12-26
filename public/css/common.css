@@ -20,3 +20,31 @@
         background-size: contain;
     }
 }
+
+/***************************
+	Player Detail Styling
+****************************/
+
+.playerDetailContainer {
+    max-width: 500px;
+    margin: .72rem auto;
+}
+
+.playerDetailImage {
+    display: block;
+    margin: 1.2rem auto;
+    border-radius: 100%;
+    max-width: 150px;
+    object-fit: cover;
+}
+
+.playerDetailGameLogo {
+    width: 60px;
+    object-fit: cover;
+    display: inline-block;
+    margin: 0 .4rem 1rem 0;
+}
+
+.playerDetailDescription {
+    line-height: 1.9rem;
+}

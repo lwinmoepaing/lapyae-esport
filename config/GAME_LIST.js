@@ -15,10 +15,10 @@ const GAME_LIST = [
     },
     {
         id: 'dota_2',
-        color: 'success',
+        color: 'dark',
         link: '#!',
         link_title: 'Comming Soon',
-        game_img: '/images/games/dota-2.png'
+        game_img: '/images/games/dota_2.png'
     },
     {
         id: 'ml',

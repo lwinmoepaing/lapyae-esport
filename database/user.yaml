@@ -2,18 +2,51 @@
 - id: lmp
   name: Lwin Moe Paing
   profile_img: "/images/profile/lwin_moe_paing.jpg"
+  about: "အရင်တချိန်က Dota1 ခေတ်မှာ အကောင်းဆုံးကစားခဲ့တယ့် player တစ်ယောက်ဖြစ်ခဲ့ပြီး ။ Core နဲ့ Hard carry မှာ ထူးချွန်ခဲ့သူဖြစ်ပါတယ်။ Console Game ဖြစ်တဲ့ Ps1 , ps2 မှာ PES, အမြန်ဘောလုံးတို့မှာ ဆုများရရှိခဲ့သူဖြစ်ပြီး  အခုအခါမှာတော့ Gaming ကို အရမ်း မကစားတော့ပဲ ဖြတ်သန်းနေပါတယ်။"
+  games:
+    - &dota2 Dota 2
+    - &dota Dota
+    - &circle_empires_rivals Circle Empires Rivals
+    - &flatout2 Flatout 2
+    - &pes Pes
+    - &fifa Fifa
+    - &mobile_legends Mobile Legends
 - id: tzp
   name: Thant Zin Phyo
   profile_img: "/images/profile/thant_zin_phyo.jpg"
+  about: "Counter Strike ကို ကစားအား ကောင်းကောင်းနဲ့ Aiming ကောင်းတဲ့ ကစားသမားဖြစ်ပါတယ်။ Dota1 နဲ့ Dota2 ကိုလည်း ကောင်းစွာကစားနိုင်ပြီး ကျရာနေရာမှာ ပေးစပ်ကစားတတ်တဲ့သူတစ်ယောက်ပါ ။ စိတ်မကောင်းစရာက အခုတော့ Lapyae ဆိုင်မှာ Active မဖြစ်တော့တာပါပဲ ။ အကောင်းဆုံး Player တစ်ယောက်ဆိုတာတော့ မမှားပါဘူးဗျာ ။"
+  games:
+    - &csgo Cs Go
+    - *dota 
+    - *dota2 
+    - &pubg_mobile Pubg Mobile
 - id: nyi
   name: Nyi Nyi
   profile_img: "/images/profile/nyi_nyi.jpg"
+  about: "ကစားသမားရဲ့ အကျွမ်းကျင်ဆုံး က PES ဖြစ်ပါတယ် လူကပ်ကစားတဲ့ နေ့ရာမှာ ကျွမ်းကျင်သူပါ။ သူနဲ့ကစားရင် ပညာအများကြီးရပါလိမ့်မယ်။"
+  games:
+    - &pes Pes
+    - &fifa Fifa
 - id: mhkt
   name: Min Htet Kyaw Thu
   profile_img: "/images/profile/min_htet_kyaw_thu.jpg"
+  about: "အချိန်ခဏလေးအတွင်းမှာပဲ လက်တက်တဲ့ ကစားသမားတစ်ယောက်ဖြစ်လို့ PES ကန်ရင် ကြောက်စရာကောင်းတဲ့ Player တစ်ယောက်ပါ။ Console Game ကစားသမားတစ်ယောက်ဖြစ်ပါတယ် ။ "
+  games:
+    - *pes
+    - *fifa
 - id: amk
   name: Aung Myo Kyaw
+  about: "Console Game ကစားသမားဖြစ်ပါတယ် ။ Pes နဲ့ Fifa ကိုကျွမ်းကျင်ပြီး အပတ်စဉ်ကစားတဲ့ Pes ပွဲမှာ Champion တစ်ကြိမ်ရခဲ့ဖူးသူလည်းဖြစ်လို့ လက်ကောင်းတဲ့ ကစားသမားလို့ လူသိများတာ မမှားပါဘူး ။"
   profile_img: "/images/profile/aung_myo_kyaw.jpg"
+  games:
+    - *pes
+    - *fifa
 - id: nha
   name: Nyein Htet Aung
   profile_img: "/images/profile/nyein_htet_aung.jpg"
+  about: "Pubg မှာသာမက ဂိမ်းတိုင်းမှာ အကောင်းဆုံး ကစားနိုင်တဲ့ Player တစ်ယောက်ဖြစ်ပါတယ်။ ကစားအများဆုံး Pubg Mobile ဖြစ်ပြီးတော့ အခုတလော Tower Defense ဂိမ်းများကို နှစ်ခြိုက်နေသူပါ။ အခုလအတွင်း Circle Empire Rival Winner ဖြစ်ခဲ့သူမို့ AllStar ကစားသမားတစ်ယောက်ဆိုတာ အသေအချာပါပဲ။"
+  games:
+    - *pubg_mobile
+    - *circle_empires_rivals
+    - *flatout2 
+    - *mobile_legends
