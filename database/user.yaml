@@ -11,6 +11,7 @@
     - &pes Pes
     - &fifa Fifa
     - &mobile_legends Mobile Legends
+    - &valorant Valorant
 - id: tzp
   name: Thant Zin Phyo
   profile_img: "/images/profile/thant_zin_phyo.jpg"
@@ -55,13 +56,25 @@
   profile_img: "/images/profile/polo.jpg"
   about: "လပြည့်ဆိုင်မှာ အကောင်းဆုံး PUBG mobile ကစားသမားတစ်ယောက်ပါ။ Mobile Legneds မှာလည်း ဆရာတစ်ဆူဖြစ်ပြီး အခု Circle Empires Rivals မှာ Champion ကို စိမ်ခေါ်နိုင့်မယ်လို့ ရေးပမ်းအစားဆုံး Gamer ဖြစ်ပါတယ်။"
   games:
+    - *valorant
     - *pubg_mobile
     - *circle_empires_rivals
     - *mobile_legends
-- id: kaung_htet
+- id: khtet
   name: Kaung Htet
   profile_img: "/images/profile/kaung_htet.jpg"
   about: "PUBG mobile မှာ Snipe God ဆိုရင် ကောင်းထက်ကိုပဲ သတိရလိုက်ပါ ။ ဆောက်ရမ်း ဂေါ်တဲ့ လက်နဲ့ ပစ်ပြမှာဖြစ်တဲ့အတွက် လပြည့်ဆိုင်က Snipe God ကြီးတွေ့ရင် ဝေးဝေးသာ ပြေးပေတော့ ဘဒိုရေ။"
   games:
     - *pubg_mobile
     - *circle_empires_rivals
+- id: mask
+  name: Min Ar Kar Soe
+  profile_img: "/images/profile/min_ar_kar_soe.jpg"
+  about: "အရင်တချိန်က Dota1 ခေတ်မှာ အကောင်းဆုံးကစားခဲ့တယ့် player တစ်ယောက်ဖြစ်ခဲ့ပြီး ။ Support Type နဲ့ ထူးချွန်ခဲ့သူဖြစ်ပါတယ်။ တောင်ဥက္ကလာပမှာ Local Tournament တွေမှာ ဆင်နွဲခဲ့ပြီး လူသိများခဲ့သူလည်းဖြစ်ပါတယ်။ အခုအချိန်မှာ Valorant မှာကစားနေပြီး FPS Game မှာလည်း ကောင်းတဲ့သူဖြစ်တာမို့ Strategy Game ပဲဖစ်ဖစ် Shooting Game ပဲဖြစ်ဖြစ် ဘာလာလာဒေါင်းတဲ့ Gamer ဖြစ်ပါတယ်ခင်ဗျာ ။"
+  games:
+    - *valorant
+    - *dota
+    - *dota2
+    - *pubg_mobile
+    - *circle_empires_rivals
+

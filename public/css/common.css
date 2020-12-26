@@ -41,6 +41,7 @@
 
 .playerDetailGameLogo {
     width: 60px;
+    border-radius: 1rem;
     object-fit: cover;
     display: inline-block;
     margin: 0 .4rem 1rem 0;
