@@ -1,0 +1,22 @@
+/***************************
+	Blog Content Styling
+****************************/
+
+.blogImage {
+    padding-top: 24rem;
+    /* background-image: url(http://localhost:7000/images/blogs/2020-12-26.png); */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blogImage.large {
+    padding-top: 34rem;
+    background-size: contain;
+}
+
+@media screen and (min-width: 700px) {
+    .blogImage.large {
+        background-size: contain;
+    }
+}

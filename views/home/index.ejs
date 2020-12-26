@@ -13,7 +13,17 @@
       <% }); %>
   </div>
   <!-- Games Componenet End-->
-    
+</div>
+
+  <%  if(blog) { %>
+    <div class='blogImage large text-center' style='background-image: url(<%= blog.blog_image %>)'>
+      <div class="pb-4">
+        <a class="btn btn-primary" href="/blog/<%= blog.blog_id %>">Champion အကြောင်း ဖတ်မယ်</a>
+      </div>
+    </div>
+  <% }%>
+
+<div class="container"> 
   <!-- PES Winner Card -->
   <div class="winner-card-container">
 
