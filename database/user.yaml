@@ -1,0 +1,19 @@
+---
+- id: lmp
+  name: Lwin Moe Paing
+  profile_img: "/images/profile/lwin_moe_paing.jpg"
+- id: tzp
+  name: Thant Zin Phyo
+  profile_img: "/images/profile/thant_zin_phyo.jpg"
+- id: nyi
+  name: Nyi Nyi
+  profile_img: "/images/profile/nyi_nyi.jpg"
+- id: mhkt
+  name: Min Htet Kyaw Thu
+  profile_img: "/images/profile/min_htet_kyaw_thu.jpg"
+- id: amk
+  name: Aung Myo Kyaw
+  profile_img: "/images/profile/aung_myo_kyaw.jpg"
+- id: nha
+  name: Nyein Htet Aung
+  profile_img: "/images/profile/nyein_htet_aung.jpg"

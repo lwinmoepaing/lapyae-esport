@@ -1,53 +1,19 @@
 <% layout('../template/lapyae') -%>
 
-<!-- Canvas -->
-<main>
-  <div class="content">
-    <canvas class="scene scene--full" id="scene"></canvas>
-    <script type="x-shader/x-vertex" id="wrapVertexShader">
-      attribute float size;
-      attribute vec3 color;
-      varying vec3 vColor;
-      void main() {
-        vColor = color;
-        vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
-        gl_PointSize = size * ( 350.0 / - mvPosition.z );
-        gl_Position = projectionMatrix * mvPosition;
-      }
-    </script>
-    <script type="x-shader/x-fragment" id="wrapFragmentShader">
-      varying vec3 vColor;
-      uniform sampler2D texture;
-      void main(){
-        vec4 textureColor = texture2D( texture, gl_PointCoord );
-        if ( textureColor.a < 0.3 ) discard;
-        vec4 color = vec4(vColor.xyz, 1.0) * textureColor;
-        gl_FragColor = color;
-      }
-    </script>
-    <div class="content__inner">
-      <h2 class="content__title"> Lapyae Lion </h2>
-      <h3 class="content__subtitle"> E-Sport Center </h2>
-    </div>
-  </div>
-</main>
-<!-- Canvas End -->
+<!-- Lapyae Animation Component -->
+<% include ../component/lapyaeAnimationComponent %>
+<!-- Lapyae Animation Component Finished -->
 
-<!-- Content Container -->
 <div class="container">
 
   <!-- Games Componenet -->
   <div class="game-component-container mt-5 ">
-
     <% games.forEach(function(value){ %>
-        <% include ../component/gameComponent %>
-    <% }); %>
-
+          <% include ../component/gameComponent %>
+      <% }); %>
   </div>
   <!-- Games Componenet End-->
-
-  <hr>
-
+    
   <!-- PES Winner Card -->
   <div class="winner-card-container">
 
@@ -58,40 +24,17 @@
     <!-- Game List Title Show End -->
     
     <div id="pes_game_title">
-      <% users.forEach(function(user, index){ %>
-        <% include ../component/pesComponent %>
-      <% }); %>
+      <table class="table tournament-table-text">
+        <% users.forEach(function(user, index){ %>
+          <% include ../component/tr %>
+        <% }); %>
+      </table>
     </div>
 
   </div>
   <!-- PES Winner Card End -->
 
   <hr>
-
-  <!-- PUBG Winner Card -->
-  <div class="winner-card-container">
-
-      <!-- Game List Title Show -->
-      <div class="game-list-title text-center">
-        <img src="/images/games/pubg.png" alt="pubg">
-      </div>
-      <!-- Game List Title Show End -->
-      
-      <div class="mt-5" id="pubg_game_title">
-          <% pubg_users.forEach( function (pubg_team, indexOne){ %>
-            <h4> Team Name : ? </h4>
-            
-            <% pubg_team.forEach( function (user, index) { %>
-              <% include ../component/pubgComponent %>
-            <% }) %>
-
-            <hr>
-
-          <% }); %>
-      </div>
-  
-    </div>
-    <!-- PUBG Winner Card End -->
 
 </div>
 <!-- Content Container End-->

@@ -5,6 +5,7 @@ const path = require('path')
 const bodyParser = require('body-parser')
 const golb = require('glob')
 const ejsLocals = require('ejs-locals')
+require('dotenv').config()
 
 // Parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))

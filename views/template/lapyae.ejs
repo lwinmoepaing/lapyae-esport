@@ -4,17 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Lapyae Lion Esport Center </title>
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="<%= title ? title : 'Lapyae Esport Center' %>" />
+    <meta property="og:description"        content="<%= description ? description : 'Lapyae is online network gaming cafe and also play console games (p3, p4)' %>" />
+    <meta property="og:image"              content="<%= ogImage ? ogImage: '' %>" />
+    
+    <title> <%= title ? title : 'Lapyae Esport Center' %> </title>
     
     <link href="https://fonts.googleapis.com/css?family=Barlow:400,500,700|Playfair+Display" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
     <link rel="shortcut icon" href="/images/lplion.ico" />
     <link rel="stylesheet" href="/css/demo1.css">
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
 
+
+    
     <script src="/js/demo1.js"></script>
     <script src="/js/three.min.js"></script>
     <script src="/js/TweenMax.min.js"></script>

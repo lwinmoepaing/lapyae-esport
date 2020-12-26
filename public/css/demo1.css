@@ -13,7 +13,8 @@
 	font-family: 'Playfair Display', serif;
 	font-size: 10vw;
 	font-weight: normal;
-	color: #fff;
+	color: #272b31;
+    text-shadow: 2px 1px 6px black;
 	text-align: center;
 	margin: 0;
 	pointer-events: none;
@@ -314,6 +315,13 @@ main {
 	position: absolute;
 	transform: translate(-50%, -50%);
 }
+
+.winner-card-trophy-image-relative {
+	width: 2.5em;
+	margin: 0 .4rem;
+	position: relative;
+}
+
 .winner-card-padding-top {
 	padding-top: 2.5em;
 	font-family: 'Playfair Display', serif;
@@ -321,4 +329,11 @@ main {
 
 .winner-card-left-title {
 	margin-left: 2.5em;
+}
+
+/************************
+	Tournament Table Rows
+****************************/
+.tournament-table-text {
+	font-size: .8rem;
 }

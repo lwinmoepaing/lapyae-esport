@@ -11,7 +11,9 @@ $(document).ready(function() {
 	});
 	renderer.setPixelRatio(window.devicePixelRatio > 1 ? 2 : 1);
 	renderer.setSize(width, height);
-	renderer.setClearColor(0xcdcdcd);
+	// Background Color
+	var BackgroundColor = 0xfafafa	
+	renderer.setClearColor(BackgroundColor);
 
 	var scene = new THREE.Scene();
 
@@ -28,7 +30,7 @@ $(document).ready(function() {
 	var loader = new THREE.TextureLoader();
 	loader.crossOrigin = '';
 	var dotTexture = loader.load('images/dotTexture.png');
-	var dotsAmount = 3000;
+	var dotsAmount = 1200;
 	var dotsGeometry = new THREE.Geometry();
 	var positions = new Float32Array(dotsAmount * 3);
 

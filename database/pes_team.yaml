@@ -1,0 +1,13 @@
+---
+- id: arsenal
+  team: Arsenal
+  team_img: "/images/team/arsenal.png"
+- id: liverpool
+  team: Liverpool
+  team_img: "/images/team/liverpool.png"
+- id: atletico_madrid
+  team: Atletico Madrid
+  team_img: "/images/team/atletico_madrid.png"
+- id: juventus
+  team: Juventus
+  team_img: "/images/team/juventus.png"

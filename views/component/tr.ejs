@@ -1,7 +1,14 @@
 <tr class="my-table-tr">
-        <th scope="row"><%= user.state %></th>
-        <td><img src="<%= user.team_img %>" alt="<%= user.team %>" class="my-team-image"></td>
-        <td><img src="<%= user.profile_img %>" alt="<%= user.team %>" class="my-profile-image"><%= user.name %></td>
-        <td><%= user.team %></td>
-        <td><%= user.status %></td>
+        <!-- <th scope="row"><%= user.state %></th> -->
+        <td class="text-left"><img src="<%= user.profile_img %>" alt="<%= user.team %>" class="my-profile-image"></td>
+        <td class="text-left"><%= user.name %></td>
+        <td class="text-left"><img src="<%= user.team_img %>" alt="<%= user.team %>" class="my-team-image"> <%= user.team %> </td>
+        <td class="text-left">
+                <img 
+                        class="winner-card-trophy-image-relative" 
+                        src="<%='/images/trophy/'+ user.throphy_status + '.png' %>" 
+                        alt="trophyImage"
+                >
+                <%= user.status %>
+        </td>
 </tr>
