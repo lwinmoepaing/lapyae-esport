@@ -34,7 +34,8 @@
     display: block;
     margin: 1.2rem auto;
     border-radius: 100%;
-    max-width: 150px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
 }
 
