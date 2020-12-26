@@ -58,3 +58,10 @@
     - *pubg_mobile
     - *circle_empires_rivals
     - *mobile_legends
+- id: kaung_htet
+  name: Kaung Htet
+  profile_img: "/images/profile/kaung_htet.jpg"
+  about: "PUBG mobile မှာ Snipe God ဆိုရင် ကောင်းထက်ကိုပဲ သတိရလိုက်ပါ ။ ဆောက်ရမ်း ဂေါ်တဲ့ လက်နဲ့ ပစ်ပြမှာဖြစ်တဲ့အတွက် လပြည့်ဆိုင်က Snipe God ကြီးတွေ့ရင် ဝေးဝေးသာ ပြေးပေတော့ ဘဒိုရေ။"
+  games:
+    - *pubg_mobile
+    - *circle_empires_rivals
