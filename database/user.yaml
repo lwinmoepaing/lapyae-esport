@@ -102,4 +102,18 @@
     - *valorant
     - *pubg_mobile
     - *mobile_legends
+- id: zko
+  name: Zin Ko
+  profile_img: "/images/profile/zin_ko.jpg"
+  about: "666xParPar လို့ ဆိုင်မှာ လူသိများပြီး လက်ဖြောင့်တဲ့ သေနတ်သမားပါ ။ ရှေ့ မှာ ရုတ်ရုတ်လုပ်တာနဲ့ ဖုတ်ဖုတ်ပလိုက်လို့ စုတ်ပြတ်သတ်သွားနိုင်ပါတယ်။"
+  games:
+    - *pubg_mobile
+    - *mobile_legends
+- id: pno
+  name: Pyae Nyien Oo
+  profile_img: "/images/profile/pyae_nyein_oo.jpg"
+  about: "PUBG Mobile တစ်ခုတည်းဆော့နေလို့ အထင်မသေးပါနဲ့ အပြစ်တစ်ပေါက်တော့ ရှမ်းရှမ်းတောက်ပါ။ ဒါမယ့် PUBG တစ်ခုတည်းပဲဆော့ပါတယ် ( TikTok လည်းကြည့်တယ် )"
+  games:
+    - *pubg_mobile
+    - *mobile_legends
 
