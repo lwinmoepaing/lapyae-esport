@@ -25,6 +25,10 @@
                     <div class="fb-share-button"  data-href="<%= url %>" data-layout="button_count"></div>
                 </h5>
                 <p class="card-text playerDetailDescription"><%= description %></p>
+                <div>
+                    <button  id="copyTextBtn" class="btn btn-primary  btn-block"> Link Copy ယူပြီး သူငယ်ချင်းထံပို့ </button>
+                    <textarea class="form-control js-copytextarea mt-3" readonly id="exampleFormControlTextarea1" rows="1"><%= url %></textarea>
+                </div>
             </div>
             <div class="card-body">
                 <h6 class="card-title">ကစားသောဂိမ်းများ</h6>
@@ -38,7 +42,7 @@
                 <% }) %>
             </div>
             <div class="card-body">
-                <a href="/players" class="btn btn-outline-warning  btn-block"> ကစားသမားစာရင်း </a>
+                <a href="/players" class="btn btn-warning  btn-block"> ကစားသမားစာရင်း </a>
                 <a href="/" class="btn btn-outline-primary btn-block"> ပင်မ စာမျက်နှာ သို့ </a>
             </div>
         </div>
@@ -47,11 +51,30 @@
 </div>
 
 <!-- Load Facebook SDK for JavaScript -->
-<script>(function(d, s, id) {
+<script>
+(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
     js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
     fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    }(document, 'script', 'facebook-jssdk'));
+
+$(document).ready(function () {
+    $('#copyTextBtn').click(function () {
+        var copyTextareaBtn = document.querySelector('.js-textareacopybtn');
+        var copyTextarea = document.querySelector('.js-copytextarea');
+        copyTextarea.focus();
+        copyTextarea.select();
+        try {
+            var successful = document.execCommand('copy');
+            var msg = successful ? 'successful' : 'unsuccessful';
+        } catch (err) {
+            console.log(err)
+            console.log('Oops, unable to copy');
+        }
+    });
+});
+    
+</script>
     

@@ -31,7 +31,7 @@ const SHOW_USERS = async (req, res) => {
 		description: 'လပြည့်ဆိုင် ကစားသမားများစာရင်း',
 		ogImage,
 		users,
-		baseUrl: process.env.BASE_URL + '/users'
+		baseUrl: process.env.BASE_URL + '/players'
 	});
 };
 
@@ -62,7 +62,7 @@ const SHOW_PLAYER_BY_ID = async (req, res) => {
 	const ogImage = user ?  process.env.BASE_URL + user.profile_img : DEAULT_OG_IMAGE
 	const title = user ? user.name : 'Lapyae E-Sport | Player မတွေ့ရှိပါ။ '
 	const description = user ? user.about : title
-	const baseUrl =  process.env.BASE_URL + '/user/'
+	const baseUrl =  process.env.BASE_URL + '/players/'
 
 	res.render('home/player_detail', {
 		title,
