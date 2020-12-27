@@ -115,5 +115,16 @@
   about: "PUBG Mobile တစ်ခုတည်းဆော့နေလို့ အထင်မသေးပါနဲ့ အပြစ်တစ်ပေါက်တော့ ရှမ်းရှမ်းတောက်ပါ။ ဒါမယ့် PUBG တစ်ခုတည်းပဲဆော့ပါတယ် ( TikTok လည်းကြည့်တယ် )"
   games:
     - *pubg_mobile
-    - *mobile_legends
+- id: khs
+  name: Kaung Htet San
+  profile_img: "/images/profile/kaung_htet_sann.jpg"
+  about: "M416 pro တစ်ယောက်ပါ ။ အတောင်ပံ နဲ့ ဂလဲနဲ့ ရုပ်ချောတာ ဆိုလို့ လပြည့်ဆိုင်မှာ Kaung Htet San တစ်ယောက်ပဲရှိတယ် ။ ကိုယ်နဲ့ ယှဉ်ပစ်ရင် သေရင်သေ မသေရင် ချီးကား တိုက်သေလိမ့်မယ် ။"
+  games:
+    - *pubg_mobile
+- id: wyn
+  name: Wai Yan
+  profile_img: "/images/profile/wai_yann.jpg"
+  about: "UC သခင် ရှင်ဘုရင်ဆိုရင်တော့ မောင်ဝေယံလိုသာ မှတ်လိုက်တော့ ။ သေနတ်နဲ့ ပစ်တာထက် Skin နဲ့ ပစ်သတ်လို့ သေသွားတာကိုပဲ လိုချင်တယ်။ လောကမှာ အလှဆုံး ဝတ်ဆုံတွေနဲ့ ရှင်သန်ပစ်ခေတ်နေမယ့်သူပါ ။"
+  games:
+    - *pubg_mobile
 
