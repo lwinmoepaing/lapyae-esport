@@ -112,4 +112,11 @@
   games:
     - *pubg_mobile
     - *mobile_legends
+- id: san
+  name: Thet Gyi
+  profile_img: "/images/profile/san.png"
+  about: "ကျွန်တော်ကတော့ San ပါ ။ Lapyae Game Shop ရဲ့ Pubg ကစားသမားတစ်ယောက်ဖြစ်ပါတယ် ။ Pubg Mobile မှာတော့ One Vs One ဖြစ်ချင်ရင် အချိန်မရွေး ပစ်လို့ရတယ် စိန်ခေါ်လို့ရတယ် တိမ်ပေါ်အထိလိုက်မယ့် San တဲ့ကွ။  ဘယ်ကောင်မှမကြောက်  ။ အခြားဂိမ်းတွေလည်း ဆော့တယ် စွယ်စုံရတယ် မရလည်းရတယ်ကွာ ။ "
+  games:
+    - *pubg_mobile
+    - *mobile_legends
 
