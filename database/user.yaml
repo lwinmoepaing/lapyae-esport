@@ -86,4 +86,20 @@
     - *dota
     - *dota2
     - *pubg_mobile
+- id: shag
+  name: Shar Htoo Aung
+  profile_img: "/images/profile/shar_htoo_aung.jpg"
+  about: "မြန်မာမှာ Taka ပဲဖြစ်ဖြစ် ၊ Lapyae မှာ Snipe God ပဲဖြစ်ဖြစ် အကုန်လုံးကို ပစ်နိုင်တဲ့ ဆရာ ဖက်တီးဆိုတာ Mother ပါပဲ ။ ဆိုင်မှာ Mother လို့ လူသိများပြီး အပစ်ကြမ်းတယ့် Pro တစ်ပါးပါ။ ( M24 God ) "
+  games:
+    - *valorant
+    - *pubg_mobile
+    - *mobile_legends
+- id: yma
+  name: Ye Mon Aung
+  profile_img: "/images/profile/jerome.jpg"
+  about: "Jerome က ဆိုင်ကလူတွေကို ပြောချင်တာရှိတယ် အဲ့ဒါက ဘယ်ကောင်ဖြစ်ဖြစ်လာခဲ့ ။ ဆောက်ရမ်းကြမ်းနေရင် လပြည့်ဆိုင်လာခဲ့ ... Jerome ရှိတယ် ။ "
+  games:
+    - *valorant
+    - *pubg_mobile
+    - *mobile_legends
 

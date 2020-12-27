@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	var canvas = document.querySelector('canvas');
+	if (!canvas) return
 	var width = canvas.offsetWidth,
 		height = canvas.offsetHeight;
 
