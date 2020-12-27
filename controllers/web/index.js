@@ -25,11 +25,11 @@ exports.SHOW_INDEX = SHOW_INDEX;
 
 const SHOW_USERS = async (req, res) => {
 	const users = await getUser() 
-
+	const ogImage = process.env.BASE_URL + '/images/profile/player_list.png'
 	res.render('home/users', {
 		title: 'Lapyae E-Sport: ကစားသမားစာရင်း ',
 		description: 'လပြည့်ဆိုင် ကစားသမားများစာရင်း',
-		ogImage: DEAULT_OG_IMAGE,
+		ogImage,
 		users,
 		baseUrl: process.env.BASE_URL + '/users'
 	});
