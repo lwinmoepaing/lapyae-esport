@@ -128,4 +128,11 @@
     - *circle_empires_rivals
     - *dota2
     - *dota
+- id: kst
+  name: Kyaw Sithu
+  profile_img: "/images/profile/kyaw_sithu.jpg"
+  about: "အကောင်းဆုံး player မဟုတ်ပေမယ့် အကောင်းဆုံးကြိုးစားနိုင်မယ့် player တစ်ယောက်ပါ ။ Battleground Game တွေ‌ကိုဆော့ရတာနှစ်သက်ပြီး gameအားလုံးကိုကျွမ်းကျင်စွာဆော့နိုင်ပါတယ် ။ အခုလက်ရှိ PUBG Stream Versionကိုဆော့နေပါတယ်"
+  games:
+    - *pubg_mobile
+    - *mobile_legends
 
