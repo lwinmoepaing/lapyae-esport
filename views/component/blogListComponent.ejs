@@ -1,0 +1,12 @@
+<div class="row my-3 blogListContainer">
+    <div class="col-md-3">
+            <img src="<%= blog.blog_image %>" class="blogListImage" />
+        </div>
+        <div class="col-md-9 blogListContent">
+            <h4 class="mb-3"><%= blog.blog_title %></h4>
+            <p> <%= blog.content_one %>...</p> 
+            <div class="pb-1">
+                <a href="/blog/<%= blog.blog_id %>" class="btn btn-primary btn-sm"> အပြည့်အဆုံဖတ်မယ် </a>
+            </div>
+        </div>
+</div>

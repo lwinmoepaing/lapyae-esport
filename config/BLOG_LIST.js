@@ -8,7 +8,7 @@ const fs   = require('fs');
  */
 const getBlogs = () => {
     try {
-        const dir = __dirname + '/../blogs/user.yaml';
+        const dir = __dirname + '/../database/blogs.yaml';
         const doc = yaml.safeLoad(fs.readFileSync(dir, 'utf8'));
         return doc
     } catch (e) {

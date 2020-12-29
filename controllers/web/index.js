@@ -1,6 +1,6 @@
 const { getPesWinnerList } = require('../../config/PES_LIST')
 const { getUser, getUserById } = require('../../config/USER_LIST')
-const { getBlogById } = require('../../config/BLOG_LIST')
+const { getBlogById, getBlogs } = require('../../config/BLOG_LIST')
 const GAME_LIST = require('../../config/GAME_LIST')
 const DEAULT_OG_IMAGE = process.env.BASE_URL + '/images/blogs/blog.png'
 
@@ -44,7 +44,7 @@ const SHOW_BLOG_BY_ID = async (req, res) => {
 	const ogImage = blog ?  process.env.BASE_URL + blog.blog_image : DEAULT_OG_IMAGE
 	const baseUrl =  process.env.BASE_URL + '/blog/'
 
-	res.render('home/blog', {
+	res.render('home/blog_detail', {
 		title: blogTitle,
 		description: description,
 		ogImage: ogImage,
@@ -77,21 +77,22 @@ const SHOW_PLAYER_BY_ID = async (req, res) => {
 exports.SHOW_PLAYER_BY_ID = SHOW_PLAYER_BY_ID;
 
 const SHOW_ALL_BLOGS = async (req, res) => {
-	const users = await getUser() 
-	const user = getUserById(req.params.player_id, users) 
-	const ogImage = user ?  process.env.BASE_URL + user.profile_img : DEAULT_OG_IMAGE
-	const title = user ? user.name : 'Lapyae E-Sport | Player မတွေ့ရှိပါ။ '
-	const description = user ? user.about : title
-	const baseUrl =  process.env.BASE_URL + '/players/'
+	const blogs = await getBlogs() 
+	const blogData = await Promise.all(blogs.map(blogId => getBlogById(blogId) ))
+	const ogImage =  process.env.BASE_URL + '/images/blogs/news.png'
+	const title = 'Lapyae E-Sport | နေ့စဉ်အကြောင်းအရာများ ပြိုင်ပွဲများအကြောင်း'
+	const description = 'နေ့စဉ်အကြောင်းအရာများ ပြိုင်ပွဲများအကြောင်း'
+	const baseUrl =  process.env.BASE_URL + '/blog/'
 
-	res.render('home/player_detail', {
+	const params = {
 		title,
 		description,
 		ogImage,
-		user,
-		url: baseUrl + (user ? user.id : ''),
-		baseUrl
-	});
+		url: baseUrl,
+		baseUrl,
+		blogs: blogData
+	}
+	res.render('home/blog_list', params);
 };
 
 exports.SHOW_ALL_BLOGS = SHOW_ALL_BLOGS;

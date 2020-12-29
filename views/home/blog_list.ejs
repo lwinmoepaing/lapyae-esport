@@ -1,0 +1,8 @@
+<% layout('../template/lapyae') -%>
+
+<div class="container py-3">
+    <% blogs.map(blog => { %>
+        <% include ../component/blogListComponent %>
+    <% })%>
+
+</div>

@@ -13,13 +13,7 @@
     </p>
 
     <% if (blog) { %>
-        <% if (blog.content_one) { %>
-          <p><%= blog.content_one %></p>
-        <% } %>
-    
-        <% if (blog.content_two) { %>
-          <p><%= blog.content_two %></p>
-        <% } %>
+        <% include ../component/blogComponent %>
         <div class="fb-share-button"  data-href="<%= url %>" data-layout="button_count">
         </div>
     <% } %>
