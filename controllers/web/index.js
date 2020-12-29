@@ -75,3 +75,25 @@ const SHOW_PLAYER_BY_ID = async (req, res) => {
 };
 
 exports.SHOW_PLAYER_BY_ID = SHOW_PLAYER_BY_ID;
+
+const SHOW_ALL_BLOGS = async (req, res) => {
+	const users = await getUser() 
+	const user = getUserById(req.params.player_id, users) 
+	const ogImage = user ?  process.env.BASE_URL + user.profile_img : DEAULT_OG_IMAGE
+	const title = user ? user.name : 'Lapyae E-Sport | Player မတွေ့ရှိပါ။ '
+	const description = user ? user.about : title
+	const baseUrl =  process.env.BASE_URL + '/players/'
+
+	res.render('home/player_detail', {
+		title,
+		description,
+		ogImage,
+		user,
+		url: baseUrl + (user ? user.id : ''),
+		baseUrl
+	});
+};
+
+exports.SHOW_ALL_BLOGS = SHOW_ALL_BLOGS;
+
+
