@@ -60,6 +60,21 @@ p {
     line-height: 1.8rem;
 }
 
+h4 {
+    line-height: 2rem;
+}
+
+
+/*******************************
+    Blog Detail
+********************************/
+.blog-detail-container {
+    background: #ececec;
+    padding: 1rem;
+    border-radius: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+}
 
 /*******************************
     Blog List
@@ -72,7 +87,7 @@ p {
 }
 
 .blogListContent {
-    background-color: #fbfbfb;
+    background-color: #f5f4f4;
     border-radius: 20px;
     padding: 1rem;
 }

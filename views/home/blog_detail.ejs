@@ -4,23 +4,24 @@
 </div>
 
 <div class="container py-4">
-    <h3 class="py-2 mb-4">
-        <%= title %>
-    </h3>
+   <div class="blog-detail-container">
+        <h3 class="py-2 mb-4">
+            <%= title %>
+        </h3>
 
-    <p>
-        <%= description %>
-    </p>
+        <p>
+            <%= description %>
+        </p>
 
-    <% if (blog) { %>
-        <% include ../component/blogComponent %>
-        <div class="fb-share-button"  data-href="<%= url %>" data-layout="button_count">
-        </div>
-    <% } %>
+        <% if (blog) { %>
+            <% include ../component/blogComponent %>
+            <div class="fb-share-button"  data-href="<%= url %>" data-layout="button_count">
+            </div>
+        <% } %>
 
-    <a class="btn btn-warning btn-sm my-2 btn-block mr-1" href="/blog"> သတင်းစာမျက်နှာသို့ </a>
-    <a class="btn btn-outline-primary my-2 btn-sm btn-block mr-1" href="/"> ပင်မ စာမျက်နှာ သို့ </a>
-    
+        <a class="btn btn-warning btn-sm my-2 btn-block mr-1" href="/blog"> သတင်းစာမျက်နှာသို့ </a>
+        <a class="btn btn-outline-primary my-2 btn-sm btn-block mr-1" href="/"> ပင်မ စာမျက်နှာ သို့ </a>
+   </div>
 </div>
 
 <!-- Load Facebook SDK for JavaScript -->
