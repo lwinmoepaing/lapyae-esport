@@ -61,7 +61,7 @@
 - id: shag
   name: Shar Htoo Aung
   profile_img: "/images/profile/shar_htoo_aung.jpg"
-  about: "မြန်မာမှာ Taka ပဲဖြစ်ဖြစ် ၊ Lapyae မှာ Snipe God ပဲဖြစ်ဖြစ် အကုန်လုံးကို ပစ်နိုင်တဲ့ ဆရာ ဖက်တီးဆိုတာ Mother ပါပဲ ။ ဆိုင်မှာ Mother လို့ လူသိများပြီး အပစ်ကြမ်းတယ့် Pro တစ်ပါးပါ။ Snipe God ပါ။ တခြားကောင်တွေ ကျည်တစ်ကတ်လုံး ကုန်အောင်ပစ်တဲ့အချိန် ကိုယ်တွေက တစ်တောင့် နှစ်တောင့်နဲ့ သတ်လွန်းလို့ နာမည်ကြီးနေတာလေးပဲရှိတယ်။ "
+  about: "မဂ်လာပါဗျ ကျွန်တော်ကိုတော့ Happyလို့ခေါ်နိုင်ပါတယ်ဗျ ။ Lapyae Game shopမှာတော့ Mother ဆိုပြီးလူသိများပါတယ်ဗျ ။ ကျွန်တော်ကတော့ Gamer တော့မဟုတ်ပေမဲ့ ဘယ်Gameမှာမဆို Playဖူးပါတယ်ခင်ဗျ ။ Ml, PUBG, Freefire, ROS, Internet ဂိမ်းတေအပြင် offline ဂိမ်းတွေကအစ play ခဲ့တဲ့ player လေးတစ်ယောက်ပါ ။ အာ့တာကြောင့်မြန်မာမှာဘယ် Game streammer တွေကိုမဆို 1 vs 1 ပစ်နိုင်ပါတယ်တယ်ဗျ အချိန်မရွေး room ခေါ်နိုင်ပါတယ်ဗျ ။"
   games:
     - *valorant
     - *pubg_mobile
@@ -135,4 +135,10 @@
   games:
     - *pubg_mobile
     - *mobile_legends
+- id: lpzo
+  name: Pyae Phyoe
+  profile_img: "/images/profile/lp_zwe_oak.jpg"
+  about: "လပြည့်ဆိုင်ရဲ့ God Level Tier ရှိတဲ့ player တစ်ယောက်ပါ။ မြန်မာ streamer Taka ဆိုရင် Lapyae x ZweOak ဆိုတဲ့အသံကြားတာနဲ့ ဖင်တုန်နေပါပြီ အခြားသူမဟုတ် လပြည့် ဇွဲအုပ်ဆိုတဲ့ ပြည့်ဖြိုးပါပဲ အဲ့လောက်ဆို တော်ရုံကောင်တွေက သဘောပေါက်သင့်ပါပြီ ။"
+  games:
+    - *pubg_mobile
 

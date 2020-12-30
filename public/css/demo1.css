@@ -47,9 +47,9 @@
 }
 
 .my-profile-image {
-	width: 2.8em;
+	width: 2.5em;
 	margin-right: .3em;
-	height: 2.8em;
+	height: 2.5em;
 	object-fit: cover;
 	border: 1px solid #dfdfdf;
 	border-radius: 2.3em;
