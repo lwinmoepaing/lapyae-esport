@@ -1,5 +1,5 @@
 const { getPesWinnerList } = require('../../config/PES_LIST')
-const { getUser, getUserById } = require('../../config/USER_LIST')
+const { getUser, getUserById, getThrophyUser } = require('../../config/USER_LIST')
 const { getBlogById, getBlogs } = require('../../config/BLOG_LIST')
 const GAME_LIST = require('../../config/GAME_LIST')
 const DEAULT_OG_IMAGE = process.env.BASE_URL + '/images/blogs/blog.png'
@@ -80,8 +80,8 @@ const SHOW_ALL_BLOGS = async (req, res) => {
 	const blogs = await getBlogs() 
 	const blogData = await Promise.all(blogs.map(blogId => getBlogById(blogId) ))
 	const ogImage =  process.env.BASE_URL + '/images/blogs/news.png'
-	const title = 'Lapyae E-Sport | နေ့စဉ်အကြောင်းအရာများ ပြိုင်ပွဲများအကြောင်း'
-	const description = 'နေ့စဉ်အကြောင်းအရာများ ပြိုင်ပွဲများအကြောင်း'
+	const title = 'Lapyae E-Sport | ပြိုင်ပွဲများအကြောင်း နှင့် နေ့စဉ်သတင်း'
+	const description = 'ပြိုင်ပွဲများအကြောင်း နှင့် နေ့စဉ်သတင်း'
 	const baseUrl =  process.env.BASE_URL + '/blog/'
 
 	const params = {
@@ -97,4 +97,52 @@ const SHOW_ALL_BLOGS = async (req, res) => {
 
 exports.SHOW_ALL_BLOGS = SHOW_ALL_BLOGS;
 
+const SHOW_ALL_THROPHY_PLAYERS = async (req, res) => {
+	const pc_users = await getUser() 
+	const pc_throphy_users = await getThrophyUser('pc') 
+	const pc_throphy_users_data = await Promise.all(pc_throphy_users.map(user =>  ({
+		...getUserById(user.id, pc_users),
+		...user,
+		total_throphy: addTotalThrophy(user.throphy)
+	})))
+	// Delete Keys 
+	deleteKeysFromArray(pc_throphy_users_data, ['about', 'games'])
 
+	const ogImage =  process.env.BASE_URL + '/images/profile/player_list.png'
+	const title = 'Lapyae E-Sport | ဆုရရှိသူများ'
+	const description = 'ဆုရရှိသူများ စာရင်း'
+	const baseUrl =  process.env.BASE_URL + '/throphy_players/'
+
+	const params = {
+		ogImage,
+		title,
+		description,
+		baseUrl,
+		pc_users: pc_throphy_users_data
+	}
+	// res.json(params);
+	res.render('home/throphy_player_list', params);
+
+};
+
+exports.SHOW_ALL_THROPHY_PLAYERS = SHOW_ALL_THROPHY_PLAYERS;
+
+
+/**
+ * Helper
+ */
+const deleteKeysFromArray = (data = [], deletedKeys = []) => {
+	data.forEach(element => {
+		deletedKeys.forEach(key => {
+			delete element[key]
+		})
+	});
+}
+
+const addTotalThrophy = (throphyObj = {}) => {
+	return Object.keys(throphyObj)
+	.map(key => {
+		return throphyObj[key] 
+	})
+	.reduce((acc, cur) => acc + cur, 0)
+}

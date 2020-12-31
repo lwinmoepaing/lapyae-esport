@@ -28,7 +28,29 @@ const getUserById = (id, userList) => {
 }
 
 
+/**
+ * Get Throphy User Synchnous
+ * 
+ * @param {'pc' | 'console'} type - Type Throphy User
+ * 
+ * @return {Array}
+ */
+const getThrophyUser = (type = 'pc') => {
+    try {
+        const dir = __dirname + `/../database/${type}_throphy_player.yaml`;
+        const doc = yaml.safeLoad(fs.readFileSync(dir, 'utf8'));
+        return doc
+    } catch (e) {
+        console.log(e);
+        return []
+    }
+}
+
+
+
+
 module.exports = {
     getUser,
-    getUserById
+    getUserById,
+    getThrophyUser
 }

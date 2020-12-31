@@ -1,0 +1,27 @@
+<tr>
+    <!-- <td></td> -->
+    <td>
+        <a href="/players/<%= user.id %>" >
+            <img src="<%= user.profile_img %>" alt="<%= user.name %>" class="my-profile-image sm" >
+            <%= user.name %>
+        </a>
+    </td>
+
+    <td>
+        <% Object.keys(user.throphy).forEach(key => { %>      
+            <div class="mb-2">
+                <img 
+                    class="throphyIcon mr-2" 
+                    src="/images/games/<%= key.replace(/ /g,"_").toLowerCase() %>.png"
+                    alt="<%=key%>"
+                    title="<%=key%>"
+                > --
+                <% for(var i = 1; i <= user.throphy[key]; i++ ) { %> 
+                    <img class="winner-card-trophy-image-relative" src=" /images/trophy/winner.png" alt="trophyImage">  
+                <% } %> 
+            </div>
+        <% }); %>
+    </td>
+    
+    <td class="mm-font"> <%= user.total_throphy %> ခု </td>
+</tr>

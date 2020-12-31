@@ -93,3 +93,14 @@ p {
     border-radius: 20px;
     padding: 1rem;
 }
+
+
+/*******************************
+    Thropy Player List
+********************************/
+.throphyIcon {
+    width: 40px;
+    height: 48px;
+    object-fit: contain;
+    display: inline-block;
+}

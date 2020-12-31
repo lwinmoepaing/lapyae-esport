@@ -1,0 +1,37 @@
+<% layout('../template/lapyae') -%>
+
+<div class="container pt-3">
+  <h4 class="mt-2 mb-4 mm-font">လပြည့် E-Sport | ဆုရရှိသူများ </h4>
+
+  <table id="throphy_pc_user" class="table table-striped table-bordered" style="width:100%">
+    <thead>
+        <tr>
+            <!-- <th>#</th> -->
+            <th>ကစားသမား</th>
+            <th>ရရှိခဲ့သော ဆုများ</th>
+            <th>ဆု စုစုပေါင်း</th>
+        </tr>
+    </thead>
+    <tbody>
+      <% pc_users.forEach(function(user, index){ %>
+        <% include ../component/throphyPlayerTableRow %>
+      <% }); %>
+    </tbody>
+</table>
+</div>
+
+<script>
+  $(document).ready( function () {
+    // Scroll to Pes Game Title
+//     let dataTable = $('#throphy_pc_user').DataTable({
+//       pageLength: 25,
+//       order: [[ 1, 'asc' ]]
+//     });
+
+//     dataTable.on( 'order.dt search.dt', function () {
+//        dataTable.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+//            cell.innerHTML = i+1;
+//        } );
+//    } ).draw();
+  })
+</script>

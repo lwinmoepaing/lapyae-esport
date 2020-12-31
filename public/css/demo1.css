@@ -57,6 +57,11 @@
 	display: inline-block;
 }
 
+.my-profile-image.sm {
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
 .my-table-tr > td {
 	min-height: 2.8em;
 	line-height: 2.8em;
