@@ -104,3 +104,7 @@ p {
     object-fit: contain;
     display: inline-block;
 }
+
+.throphyPlayerName {
+    font-size: .8em;
+}
