@@ -20,18 +20,18 @@
         <div class="card playerDetailContainer">
             <img class="playerDetailImage" src="<%= ogImage %>" alt="<%= title %>">
             <div class="card-body">
-                <h5 class="card-title">
+                <h5 class="card-title mm-font">
                     <%= title %>
                     <div class="fb-share-button"  data-href="<%= url %>" data-layout="button_count"></div>
                 </h5>
-                <p class="card-text playerDetailDescription"><%= description %></p>
+                <p class="card-text playerDetailDescription mm-font"><%= description %></p>
                 <div>
-                    <button  id="copyTextBtn" class="btn btn-primary  btn-block"> Link Copy ယူပြီး သူငယ်ချင်းထံပို့ </button>
+                    <button  id="copyTextBtn" class="btn btn-primary  btn-block mm-font "> Link Copy ယူပြီး သူငယ်ချင်းထံပို့ </button>
                     <textarea class="form-control js-copytextarea mt-3" readonly id="exampleFormControlTextarea1" rows="1"><%= url %></textarea>
                 </div>
             </div>
             <div class="card-body">
-                <h6 class="card-title">ကစားသောဂိမ်းများ</h6>
+                <h6 class="card-title mm-font">ကစားသောဂိမ်းများ</h6>
                 <% user.games.map(game => { %>
                     <img 
                         class="playerDetailGameLogo" 
