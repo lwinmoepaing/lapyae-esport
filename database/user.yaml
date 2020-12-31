@@ -141,4 +141,10 @@
   about: "လပြည့်ဆိုင်ရဲ့ God Level Tier ရှိတဲ့ player တစ်ယောက်ပါ။ မြန်မာ streamer Taka ဆိုရင် Lapyae x ZweOak ဆိုတဲ့အသံကြားတာနဲ့ ဖင်တုန်နေပါပြီ အခြားသူမဟုတ် လပြည့် ဇွဲအုပ်ဆိုတဲ့ ပြည့်ဖြိုးပါပဲ အဲ့လောက်ဆို တော်ရုံကောင်တွေက သဘောပေါက်သင့်ပါပြီ ။"
   games:
     - *pubg_mobile
+- id: ppp
+  name: Phone Pyae Paing
+  profile_img: "/images/profile/ppp.jpg"
+  about: "too play lay 😁😁😁😃"
+  games:
+    - *pubg_mobile
 
