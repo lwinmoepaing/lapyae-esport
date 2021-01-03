@@ -1,4 +1,8 @@
 ---
+- id: khtet
+  name: Kaung Htet
+  throphy: 
+    circle_empires_rivals: 1
 - id: nha
   name: Nyein Htet Aung
   throphy: 
