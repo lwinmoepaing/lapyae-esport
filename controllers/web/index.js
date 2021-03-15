@@ -120,9 +120,7 @@ const SHOW_ALL_THROPHY_PLAYERS = async (req, res) => {
 		baseUrl,
 		pc_users: pc_throphy_users_data
 	}
-	// res.json(params);
 	res.render('home/throphy_player_list', params);
-
 };
 
 exports.SHOW_ALL_THROPHY_PLAYERS = SHOW_ALL_THROPHY_PLAYERS;

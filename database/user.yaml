@@ -14,14 +14,40 @@
     - &valorant Valorant
     - &csgo Cs Go
     - &pubg_mobile Pubg Mobile
-- id: nha
-  name: Nyein Htet Aung
-  profile_img: "/images/profile/nyein_htet_aung.jpg"
-  about: "Pubg မှာသာမက ဂိမ်းတိုင်းမှာ အကောင်းဆုံး ကစားနိုင်တဲ့ Player တစ်ယောက်ဖြစ်ပါတယ်။ ကစားအများဆုံး Pubg Mobile ဖြစ်ပြီးတော့ အခုတလော Tower Defense ဂိမ်းများကို နှစ်ခြိုက်နေသူပါ။ အခုလအတွင်း Circle Empire Rival Winner ဖြစ်ခဲ့သူမို့ AllStar ကစားသမားတစ်ယောက်ဆိုတာ အသေအချာပါပဲ။"
+    - &world_of_warcraft World Of Warcraft
+    - &general General
+- id: sthu
+  name: Si Thu
+  profile_img: "/images/profile/si_thu.jpg"
+  about: "ချူပါပီ မူညမ်ညိုနဲ့ ဩအေးပါ။"
+  games:
+    - *world_of_warcraft
+    - *valorant
+    - *general
+    - *dota2
+    - *pubg_mobile
+- id: kgyi
+  name: Kyaw Gyi (Zue)
+  profile_img: "/images/profile/kyaw_gyi.jpg"
+  about: "လပြည့်ဆိုင်ရဲ့ God Level Tier ရှိတဲ့ player တစ်ယောက်ပါ။ PUBG mobile မှာ Snipe God ဆိုရင် ZUEကိုပဲ သတိရလိုက်ပါ ။ သူကြမ်းရင်လဲထိန်းမရဘူးဗျ🤣 လောင်တတ်ခြင်းသိပ်မရှိပဲ ဘာလာလာဒေါင်းတဲ့ Gamer ဖြစ်ပါတယ်ခင်ဗျာ ။ အခုအချိန်မှာ Valorant မှာကစားနေပါပြီ။"
+  games:
+    - *valorant
+    - *pubg_mobile
+    - *general
+- id: shag
+  name: Shar Htoo Aung
+  profile_img: "/images/profile/shar_htoo_aung.jpg"
+  about: "မဂ်လာပါဗျ ကျွန်တော်ကိုတော့ Happyလို့ခေါ်နိုင်ပါတယ်ဗျ ။ Lapyae Game shopမှာတော့ Mother ဆိုပြီးလူသိများပါတယ်ဗျ ။ ကျွန်တော်ကတော့ Gamer တော့မဟုတ်ပေမဲ့ ဘယ်Gameမှာမဆို Playဖူးပါတယ်ခင်ဗျ ။ Ml, PUBG, Freefire, ROS, Internet ဂိမ်းတေအပြင် offline ဂိမ်းတွေကအစ play ခဲ့တဲ့ player လေးတစ်ယောက်ပါ ။ အာ့တာကြောင့်မြန်မာမှာဘယ် Game streammer တွေကိုမဆို 1 vs 1 ပစ်နိုင်ပါတယ်တယ်ဗျ အချိန်မရွေး room ခေါ်နိုင်ပါတယ်ဗျ ။"
+  games:
+    - *valorant
+    - *pubg_mobile
+    - *mobile_legends
+- id: yyo
+  name: Ye Yint Oo
+  profile_img: "/images/profile/yyo.jpg"
+  about: "La pyae မှာတော့ V.E V လို့သိကြပြီးတော့ pubg ဆော့ရင်ဖင်အရမ်းနှိုက်တဲ့ player တစ်‌ယောက်ပါ အတိုလေးgodလို့သူ့ကို သူပြောလေ့ရှိပါတယ် mobile legendဆော့ရင်လဲnoobပေမယ့် သူတစ်ကွက်ကောင်းရင် တော့ comeback ပြန်ရလေ့ရှိပါတယ် သူကြမ်းရင်လဲထိန်းမရဘူးဗျ🤣 လောင်တတ်ခြင်းသိပ်မရှိပဲ ဆေးထိုးလေ့ရှိပါတယ်"
   games:
     - *pubg_mobile
-    - *circle_empires_rivals
-    - *flatout2 
     - *mobile_legends
 - id: polo
   name: Polo
@@ -39,16 +65,6 @@
   games:
     - *pubg_mobile
     - *circle_empires_rivals
-- id: mask
-  name: Min Ar Kar Soe
-  profile_img: "/images/profile/min_ar_kar_soe.jpg"
-  about: "အရင်တချိန်က Dota1 ခေတ်မှာ အကောင်းဆုံးကစားခဲ့တယ့် player တစ်ယောက်ဖြစ်ခဲ့ပြီး ။ Support Type နဲ့ ထူးချွန်ခဲ့သူဖြစ်ပါတယ်။ တောင်ဥက္ကလာပမှာ Local Tournament တွေမှာ ဆင်နွဲခဲ့ပြီး လူသိများခဲ့သူလည်းဖြစ်ပါတယ်။ အခုအချိန်မှာ Valorant မှာကစားနေပြီး FPS Game မှာလည်း ကောင်းတဲ့သူဖြစ်တာမို့ Strategy Game ပဲဖစ်ဖစ် Shooting Game ပဲဖြစ်ဖြစ် ဘာလာလာဒေါင်းတဲ့ Gamer ဖြစ်ပါတယ်ခင်ဗျာ ။"
-  games:
-    - *valorant
-    - *dota
-    - *dota2
-    - *pubg_mobile
-    - *circle_empires_rivals
 - id: agyi
   name: Aung Gyi
   profile_img: "/images/profile/agyi.jpg"
@@ -58,13 +74,14 @@
     - *dota
     - *dota2
     - *pubg_mobile
-- id: shag
-  name: Shar Htoo Aung
-  profile_img: "/images/profile/shar_htoo_aung.jpg"
-  about: "မဂ်လာပါဗျ ကျွန်တော်ကိုတော့ Happyလို့ခေါ်နိုင်ပါတယ်ဗျ ။ Lapyae Game shopမှာတော့ Mother ဆိုပြီးလူသိများပါတယ်ဗျ ။ ကျွန်တော်ကတော့ Gamer တော့မဟုတ်ပေမဲ့ ဘယ်Gameမှာမဆို Playဖူးပါတယ်ခင်ဗျ ။ Ml, PUBG, Freefire, ROS, Internet ဂိမ်းတေအပြင် offline ဂိမ်းတွေကအစ play ခဲ့တဲ့ player လေးတစ်ယောက်ပါ ။ အာ့တာကြောင့်မြန်မာမှာဘယ် Game streammer တွေကိုမဆို 1 vs 1 ပစ်နိုင်ပါတယ်တယ်ဗျ အချိန်မရွေး room ခေါ်နိုင်ပါတယ်ဗျ ။"
+- id: nha
+  name: Nyein Htet Aung
+  profile_img: "/images/profile/nyein_htet_aung.jpg"
+  about: "Pubg မှာသာမက ဂိမ်းတိုင်းမှာ အကောင်းဆုံး ကစားနိုင်တဲ့ Player တစ်ယောက်ဖြစ်ပါတယ်။ ကစားအများဆုံး Pubg Mobile ဖြစ်ပြီးတော့ အခုတလော Tower Defense ဂိမ်းများကို နှစ်ခြိုက်နေသူပါ။ အခုလအတွင်း Circle Empire Rival Winner ဖြစ်ခဲ့သူမို့ AllStar ကစားသမားတစ်ယောက်ဆိုတာ အသေအချာပါပဲ။"
   games:
-    - *valorant
     - *pubg_mobile
+    - *circle_empires_rivals
+    - *flatout2 
     - *mobile_legends
 - id: yma
   name: Ye Mon Aung
@@ -105,13 +122,6 @@
   about: "ရှယ်ပစ်ပလန် တည်ပစ်ပလန်တွေနဲ့ တမုန်းဖုတ်တဲ့ Pubg သမားတစ်ယောက်ပါ ။ ဖင်နှိုက်လည်းရတယ် ယှဉ်နှိုက်လည်းရတယ် ဝင်ဖိုက်လည်းရတယ့် စိုင်းစိုင်း တစ်စိုင်းပဲရှိတယ်။"
   games:
     - *pubg_mobile
-- id: yyo
-  name: Ye Yint Oo
-  profile_img: "/images/profile/yyo.jpg"
-  about: "La pyae မှာတော့ V.E V လို့သိကြပြီးတော့ pubg ဆော့ရင်ဖင်အရမ်းနှိုက်တဲ့ player တစ်‌ယောက်ပါ အတိုလေးgodလို့သူ့ကို သူပြောလေ့ရှိပါတယ် mobile legendဆော့ရင်လဲnoobပေမယ့် သူတစ်ကွက်ကောင်းရင် တော့ comeback ပြန်ရလေ့ရှိပါတယ် သူကြမ်းရင်လဲထိန်းမရဘူးဗျ🤣 လောင်တတ်ခြင်းသိပ်မရှိပဲ ဆေးထိုးလေ့ရှိပါတယ်"
-  games:
-    - *pubg_mobile
-    - *mobile_legends
 - id: san
   name: Thet Gyi
   profile_img: "/images/profile/san.png"
@@ -147,4 +157,15 @@
   about: "too play lay 😁😁😁😃"
   games:
     - *pubg_mobile
+- id: mask
+  name: Min Ar Kar Soe
+  profile_img: "/images/profile/min_ar_kar_soe.jpg"
+  about: "အရင်တချိန်က Dota1 ခေတ်မှာ အကောင်းဆုံးကစားခဲ့တယ့် player တစ်ယောက်ဖြစ်ခဲ့ပြီး ။ Support Type နဲ့ ထူးချွန်ခဲ့သူဖြစ်ပါတယ်။ တောင်ဥက္ကလာပမှာ Local Tournament တွေမှာ ဆင်နွဲခဲ့ပြီး လူသိများခဲ့သူလည်းဖြစ်ပါတယ်။ အခုအချိန်မှာ Valorant မှာကစားနေပြီး FPS Game မှာလည်း ကောင်းတဲ့သူဖြစ်တာမို့ Strategy Game ပဲဖစ်ဖစ် Shooting Game ပဲဖြစ်ဖြစ် ဘာလာလာဒေါင်းတဲ့ Gamer ဖြစ်ပါတယ်ခင်ဗျာ ။"
+  games:
+    - *valorant
+    - *dota
+    - *dota2
+    - *pubg_mobile
+    - *circle_empires_rivals
+
 
