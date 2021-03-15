@@ -1,13 +1,13 @@
 const { getPesWinnerList } = require('../../config/PES_LIST')
 const { getUser, getUserById, getThrophyUser } = require('../../config/USER_LIST')
-const { getBlogById, getBlogs } = require('../../config/BLOG_LIST')
+const { getBlogById, getBlogs, getLastBlog } = require('../../config/BLOG_LIST')
 const GAME_LIST = require('../../config/GAME_LIST')
 const DEAULT_OG_IMAGE = process.env.BASE_URL + '/images/blogs/blog.png'
 
 const SHOW_INDEX = async (req, res) => {
 	const users = await getPesWinnerList() 
 
-	const blog = await getBlogById('2020-12-26')
+	const blog = await getLastBlog()
 
 	res.render('home/index', {
 		title: ' Lapyae E-Sport ',
